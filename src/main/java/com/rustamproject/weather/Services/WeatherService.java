@@ -31,7 +31,7 @@ public class WeatherService extends MappingJackson2HttpMessageConverter   {
 
     public List<Example> getWeatherForFive(String city) throws ParseException {
 
-        String websiteResponse = "http://api.openweathermap.org/data/2.5/forecast?q=" + city + "&mode=json&appid="+"1f4eefa84a3aab897cacee15b6143f54"+"&units=metric";
+        String websiteResponse = "http://api.openweathermap.org/data/2.5/forecast?q=" + city + "&mode=json&appid="+"***********************"+"&units=metric";
 
         RestTemplate restTemplate = new RestTemplate();
         String result = restTemplate.getForObject(websiteResponse, String.class);
